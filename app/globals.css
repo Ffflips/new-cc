@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  color-scheme: dark;
+}
+
+body {
+  background-image: radial-gradient(circle at 15% 0%, rgba(201, 161, 90, 0.06), transparent 40%),
+    radial-gradient(circle at 85% 10%, rgba(79, 209, 165, 0.05), transparent 45%);
+}
+
+/* Fine grid texture reminiscent of graph/engineering paper — quiet, not decorative-for-its-own-sake. */
+.grid-texture {
+  background-image: linear-gradient(rgba(255, 255, 255, 0.025) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.025) 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+
+.tabular {
+  font-variant-numeric: tabular-nums;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
