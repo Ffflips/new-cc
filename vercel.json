@@ -1,0 +1,6 @@
+{
+  "crons": [
+    { "path": "/api/predict?instId=BTC-USDT-SWAP&bar=1m", "schedule": "*/5 * * * *" },
+    { "path": "/api/predict?instId=ETH-USDT-SWAP&bar=1m", "schedule": "*/5 * * * *" }
+  ]
+}
